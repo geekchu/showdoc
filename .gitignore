@@ -4,3 +4,4 @@ Application/Runtime
 Public/Uploads
 vendor
 server/Application/Runtime
+composer.lock
