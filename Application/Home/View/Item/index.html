@@ -10,17 +10,21 @@
         </a>
         <ul class="dropdown-menu">
         <!-- dropdown menu links -->
+        <li><a href="{:U('Home/index/index')}">{$Think.Lang.web_home}</a></li>
+                      <li><a href="{:U('Home/Item/index')}">我的项目</a></li>
+            
           <li><a href="{:U('Home/User/setting')}">{$Think.Lang.personal_setting}</a></li>
 <!--           <li><a href="#share-home-modal"  data-toggle="modal">{$Think.Lang.share_home}</a></li>
- -->          <li><a href="https://github.com/star7th/showdoc/issues" target="_blank">{$Think.Lang.feedback}</a></li>
-          <li><a href="{:U('Home/index/index')}">{$Think.Lang.web_home}</a></li>
+ --> 
+          <if condition="$login_user">
           <li><a href="{:U('Home/User/exist')}">{$Think.Lang.logout}</a></li>
+          </if>
 
         </ul>
         </div>
 
         </ul>
-        <h3 class="muted"><img src="__PUBLIC__/logo/b_64.png" style="width:50px;height:50px;margin-bottom:15px;" alt="">ShowDoc</h3>
+        <h3 class="muted">DeNA China Docs System</h3>
       </div>
 
       <hr>

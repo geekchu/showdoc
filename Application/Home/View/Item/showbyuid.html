@@ -27,15 +27,12 @@
         </a>
         <ul class="dropdown-menu">
         <!-- dropdown menu links -->
+          <li><a href="{:U('Home/index/index')}">{$Think.Lang.web_home}</a></li>
           <if condition="$login_user">
             <li><a href="{:U('Home/Item/Index')}">{$Think.Lang.my_item}</a></li>
             <else />
              <li><a href="{:U('Home/User/login')}">{$Think.Lang.login_or_register}</a></li> 
           </if>
-          
-          
-          <li><a href="{$help_url}" target="_blank">{$Think.Lang.about_showdoc}</a></li>
-
         </ul>
         </div>
 

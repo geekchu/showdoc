@@ -1,0 +1,6 @@
+sftp-config.json
+Sqlite
+Application/Runtime
+Public/Uploads
+vendor
+server/Application/Runtime
